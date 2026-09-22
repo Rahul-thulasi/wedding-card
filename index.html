@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <title>Wedding Invitation | Gokul & Arya</title>
+  <meta name="description" content="Wedding Invitation of Gokul & Arya - Sunday, October 25, 2026 at Bhavana Auditorium, Cheemoor, Venjaramoodu.">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Wedding Invitation | Gokul & Arya">
+  <meta property="og:description" content="Together with their families, Gokul & Arya cordially invite you to celebrate their Wedding Ceremony on October 25, 2026.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/couple.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💍</text></svg>">
+
+  <!-- Google Fonts: Classic Standard Serif & Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=Great+Vibes&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Falling Petals & Ambient Sparkles Canvas -->
+  <canvas id="petalCanvas" class="petal-canvas"></canvas>
+
+  <!-- Background Wedding Audio -->
+  <audio id="weddingMusic" loop preload="auto">
+    <source src="audio/wedding-music.mp3" type="audio/mpeg">
+    <source src="audio/wedding.mp3" type="audio/mpeg">
+    <source src="wedding.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Floating Music Widget (Discreet & Standard) -->
+  <div class="floating-music-bar" id="musicWidget" aria-label="Music Controls">
+    <button class="music-action-btn" id="musicToggleBtn" aria-label="Play or pause wedding music" title="Play / Pause Music">
+      <div class="music-wave-bars">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <svg class="icon-play" id="iconPlay" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M8 5v14l11-7z"/>
+      </svg>
+      <svg class="icon-pause hidden" id="iconPause" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>
+      </svg>
+    </button>
+    <button class="music-action-btn mute-btn" id="muteToggleBtn" aria-label="Mute or unmute music" title="Mute / Unmute">
+      <svg class="icon-unmuted" id="iconUnmuted" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/>
+      </svg>
+      <svg class="icon-muted hidden" id="iconMuted" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73 4.27 3zM12 4L9.91 6.09 12 8.18V4z"/>
+      </svg>
+    </button>
+  </div>
+
+  <!-- ============================================ -->
+  <!-- OPENING INVITATION COVER -->
+  <!-- ============================================ -->
+  <section class="opening-cover" id="coverGate" aria-label="Wedding Invitation Envelope">
+    <div class="cover-card">
+      <div class="cover-inner-border">
+        
+        <!-- Elegant Golden Flourish Monogram -->
+        <div class="cover-monogram">
+          <svg viewBox="0 0 50 36" class="monogram-svg">
+            <path d="M25 2 C22 10, 16 18, 25 32 C34 18, 28 10, 25 2 Z" fill="url(#goldGradStandard)" />
+            <path d="M25 10 C17 17, 10 24, 16 32 C22 29, 24 21, 25 10 Z" fill="url(#goldGradStandard)" opacity="0.85" />
+            <path d="M25 10 C33 17, 40 24, 34 32 C28 29, 26 21, 25 10 Z" fill="url(#goldGradStandard)" opacity="0.85" />
+            <circle cx="25" cy="33" r="1.8" fill="url(#goldGradStandard)" />
+            <defs>
+              <linearGradient id="goldGradStandard" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#EAC775" />
+                <stop offset="50%" stop-color="#C59B27" />
+                <stop offset="100%" stop-color="#916E16" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+
+        <p class="cover-eyebrow">Together with their families</p>
+        
+        <div class="cover-couple">
+          <span class="couple-first">Gokul</span>
+          <span class="couple-amp">&amp;</span>
+          <span class="couple-second">Arya</span>
+        </div>
+
+        <div class="cover-divider">
+          <span class="line"></span>
+          <span class="symbol">✦</span>
+          <span class="line"></span>
+        </div>
+
+        <div class="cover-date-tag">25 • 10 • 2026</div>
+
+        <button class="open-btn" id="openInvitationBtn" aria-label="Open Wedding Invitation">
+          <span class="btn-shine"></span>
+          <span class="btn-text">Open Invitation</span>
+        </button>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================ -->
+  <!-- MAIN INVITATION CARD (STANDARD & REFINED) -->
+  <!-- ============================================ -->
+  <main class="invitation-wrapper hidden-initially" id="invitationContent">
+    <article class="invitation-card">
+      
+      <!-- Standard Classical Header -->
+      <header class="card-header">
+        <div class="classical-top-flourish">
+          <svg viewBox="0 0 120 24" class="flourish-svg">
+            <path d="M10 12 Q35 4, 60 12 Q85 20, 110 12" fill="none" stroke="url(#goldGradStandard)" stroke-width="1.2" />
+            <circle cx="60" cy="12" r="3" fill="url(#goldGradStandard)" />
+          </svg>
+        </div>
+        
+        <p class="header-blessing-text">With the blessings of Almighty and our families</p>
+        <p class="header-invite-text">
+          We request the pleasure of your company to celebrate the wedding ceremony of
+        </p>
+      </header>
+
+      <!-- ============================================ -->
+      <!-- COUPLE SECTION & BALANCED PHOTOS -->
+      <!-- ============================================ -->
+      <section class="couple-section" aria-label="Gokul and Arya">
+        
+        <!-- Couple Names -->
+        <div class="couple-header-title">
+          <h1 class="c-name">Gokul</h1>
+          <span class="c-heart">♡</span>
+          <h1 class="c-name">Arya</h1>
+        </div>
+
+        <!-- Featured Couple Photograph (Watercolor) -->
+        <div class="couple-portrait-container">
+          <div class="portrait-frame couple-portrait-frame">
+            <img src="images/couple.jpg" alt="Gokul and Arya" class="portrait-image couple-photo-img" id="couplePhoto" loading="lazy">
+          </div>
+          <p class="portrait-caption">Gokul &amp; Arya</p>
+        </div>
+
+        <!-- Symmetrical, Balanced Groom & Bride Portraits (Side by Side) -->
+        <div class="balanced-portraits-row">
+          
+          <!-- Groom Photo -->
+          <div class="balanced-card">
+            <div class="portrait-frame individual-frame">
+              <img src="images/groom.jpg" alt="Groom Gokul" class="portrait-image groom-photo-img" id="groomPhoto" loading="lazy">
+            </div>
+            <div class="portrait-meta">
+              <span class="portrait-role">Groom</span>
+              <h3 class="portrait-person-name">Gokul</h3>
+            </div>
+          </div>
+
+          <!-- Bride Photo -->
+          <div class="balanced-card">
+            <div class="portrait-frame individual-frame">
+              <img src="images/bride.jpg" alt="Bride Arya" class="portrait-image bride-photo-img" id="bridePhoto" loading="lazy">
+            </div>
+            <div class="portrait-meta">
+              <span class="portrait-role">Bride</span>
+              <h3 class="portrait-person-name">Arya</h3>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <div class="simple-divider">
+        <span class="line"></span>
+        <span class="gem">✦</span>
+        <span class="line"></span>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- WEDDING CEREMONY (MAIN & ONLY EVENT) -->
+      <!-- ============================================ -->
+      <section class="ceremony-section" aria-label="Wedding Ceremony">
+        <span class="ceremony-tag">Auspicious Ceremony</span>
+        <h2 class="section-heading">Wedding Ceremony</h2>
+
+        <div class="ceremony-info-box">
+          <div class="ceremony-row">
+            <div class="info-item">
+              <span class="info-label">Date</span>
+              <span class="info-highlight">25 October 2026</span>
+              <span class="info-sub">Sunday</span>
+            </div>
+            <div class="info-divider"></div>
+            <div class="info-item">
+              <span class="info-label">Time</span>
+              <span class="info-highlight">11:30 AM – 12:15 PM</span>
+              <span class="info-sub">Muhurtham</span>
+            </div>
+          </div>
+
+          <div class="venue-block">
+            <div class="venue-icon-svg-wrap">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="venue-svg">
+                <path d="M3 21h18M4 18h16M5 14v4M9 14v4M15 14v4M19 14v4M2 10l10-7 10 7H2z"/>
+              </svg>
+            </div>
+            <h3 class="venue-title">Bhavana Auditorium</h3>
+            <p class="venue-sub">Chemboor, Venjaramoodu</p>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- ============================================ -->
+      <!-- LIVE COUNTDOWN -->
+      <!-- ============================================ -->
+      <section class="countdown-section" aria-label="Countdown to Ceremony">
+        <h3 class="countdown-heading">Counting Down to the Wedding</h3>
+        <p class="countdown-subtitle">25 October 2026 at 11:30 AM</p>
+
+        <div class="countdown-timer" id="countdownGrid">
+          <div class="timer-box">
+            <span class="timer-num" id="countDays">00</span>
+            <span class="timer-lbl">Days</span>
+          </div>
+          <span class="timer-sep">:</span>
+          <div class="timer-box">
+            <span class="timer-num" id="countHours">00</span>
+            <span class="timer-lbl">Hours</span>
+          </div>
+          <span class="timer-sep">:</span>
+          <div class="timer-box">
+            <span class="timer-num" id="countMinutes">00</span>
+            <span class="timer-lbl">Minutes</span>
+          </div>
+          <span class="timer-sep">:</span>
+          <div class="timer-box">
+            <span class="timer-num" id="countSeconds">00</span>
+            <span class="timer-lbl">Seconds</span>
+          </div>
+        </div>
+
+        <div class="countdown-banner hidden" id="countdownCompleted">
+          The Wedding Day Has Arrived ❤️
+        </div>
+      </section>
+
+      <div class="simple-divider">
+        <span class="line"></span>
+        <span class="gem">✦</span>
+        <span class="line"></span>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- LOCATION & VENUE QR CODE -->
+      <!-- ============================================ -->
+      <section class="location-section" aria-label="Location and Directions">
+        <h2 class="section-heading">Location</h2>
+
+        <div class="location-card">
+          <div class="location-pin-wrap">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" class="pin-svg">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+          </div>
+          <h3 class="loc-venue">Bhavana Auditorium</h3>
+          <p class="loc-area">Cheemoor, Venjaramoodu</p>
+
+          <a href="https://www.google.com/maps/search/?api=1&query=Bhavana+Auditorium%2C+Cheemoor%2C+Venjaramoodu" 
+             target="_blank" 
+             rel="noopener noreferrer" 
+             class="maps-btn" 
+             id="viewLocationBtn">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="maps-icon">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+            </svg>
+            <span>View Location</span>
+          </a>
+
+          <!-- QR Code Container: Clear, Crisp, Untouched with generous white space -->
+          <div class="qr-container">
+            <h4 class="qr-label">Scan for Location</h4>
+            <div class="qr-white-frame">
+              <img src="images/location-qr.png" 
+                   alt="Location QR Code for Bhavana Auditorium" 
+                   class="qr-image" 
+                   id="locationQrImg">
+            </div>
+            <p class="qr-note">Scan the QR code to open the wedding location</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="simple-divider">
+        <span class="line"></span>
+        <span class="gem">✦</span>
+        <span class="line"></span>
+      </div>
+
+      <!-- ============================================ -->
+      <!-- FAMILY BLESSINGS -->
+      <!-- ============================================ -->
+      <section class="family-section" aria-label="Family Blessings">
+        <h2 class="section-heading">With the Blessings of Family</h2>
+
+        <div class="family-list">
+          <div class="family-item">
+            <h4 class="f-name">Thulaseedharan</h4>
+            <span class="f-role">Father of the Groom</span>
+          </div>
+
+          <span class="f-dot">✦</span>
+
+          <div class="family-item">
+            <h4 class="f-name">Sreekala</h4>
+            <span class="f-role">Mother of the Groom</span>
+          </div>
+
+          <span class="f-dot">✦</span>
+
+          <div class="family-item">
+            <h4 class="f-name">Rahul</h4>
+            <span class="f-role">Brother of the Groom</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Card Footer -->
+      <footer class="card-footer">
+        <p class="footer-warm-text">Your gracious presence and heartfelt blessings are our greatest joy.</p>
+        <div class="footer-sign">Gokul &amp; Arya</div>
+        <p class="footer-date-tag">25 October 2026 • Bhavana Auditorium</p>
+      </footer>
+
+    </article>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
